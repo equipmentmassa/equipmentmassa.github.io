@@ -1,0 +1,130 @@
+body {
+  background-color: rgb(226, 222, 222);
+  font-family: "Ubuntu", sans-serif;
+}
+
+.top {
+  background: rgb(244, 128, 30);
+  width: 100%;
+  height: 80px;
+  position: absolute;
+}
+
+.logo {
+  position: absolute;
+  margin-left: 50px;
+  z-index: 2;
+}
+
+.zagolovok {
+  padding-top: 170px;
+  text-align: center;
+  color: rgb(244, 128, 30);
+}
+
+a {
+  text-decoration: none;
+}
+
+#navbar {
+  padding-top: 110px;
+  list-style-type: none;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+}
+
+#navbar li {
+  display: inline;
+
+}
+
+.bar a {
+  padding: 1em;
+  color: #9B4222;
+  border-right: 1px solid #FFAB51;
+  background: rgba(255, 171, 81, .3);
+  font-weight: 700;
+}
+
+.bar a:hover {
+  background: rgb(244, 128, 30)
+}
+
+.all {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 250px;
+}
+
+.krug,
+.truba,
+.list,
+.hexagon,
+.card {
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(177, 177, 177);
+  margin-right: 10px;
+  margin-bottom: 50px;
+  width: 400px;
+  padding-left: 10px;
+  padding-bottom: 15px;
+  border-radius: 5px;
+}
+
+.result {
+  display: flex;
+  font-weight: 700;
+  justify-content: space-around;
+  margin-right: 150px;
+  font-size: 20px;
+}
+
+.ves {
+  color: rgb(137, 157, 211);
+}
+
+h2 {
+  color: rgb(137, 157, 211);
+}
+
+#rez,
+#rez1,
+#rez2,
+#rez3 {
+  color: rgb(118, 163, 55);
+}
+
+.cntrimage {
+  display: block;
+  margin: 0 auto;
+}
+
+
+.input,
+.text {
+  display: inline-flex;
+}
+
+
+
+@media (max-width:600px) {
+  .card {
+    font-size: 24px;
+  }
+
+  .krug,
+  .truba,
+  .list,
+  .hexagon,
+  .card {
+    font-size: 24px;
+  }
+
+  .cardweight {
+    display: flex;
+    flex-direction: column;
+  }
+}

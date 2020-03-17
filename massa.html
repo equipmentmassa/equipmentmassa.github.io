@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+   <title>Расчет массы заготовки</title>
+   <link href="styles.css" rel="stylesheet" type="text/css" />
+   <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+   <script type="text/javascript" src="script.js"></script>
+</head>
+
+
+<body>
+   <header>
+      <divc class="top">
+         </div>
+         <div class="logo"><a href="http://new.magma.ua/"><img src="logo.png" height="80" alt="Magma"></a></div>
+         <div class="zagolovok">
+            <h1>Расчет массы заготовок.</h1>
+         </div>
+   </header>
+
+   <nav class="bar">
+      <ul id="navbar">
+         <li><a href="index.html">Токарные</a></li>
+         <li><a href="sverl.html">Сверлильные</a></li>
+         <li><a href="rast.html">Расточные</a></li>
+         <li><a href="shlif.html">Шлифовальные</a></li>
+         <li><a href="frez.html">Фрезерные</a></li>
+         <li><a href="dolb.html">Долбежные</a></li>
+         <li><a href="massa.html">Расчет массы заготовок</a></li>
+      </ul>
+   </nav>
+
+   <main>
+
+      <div class="all">
+         <div class="krug">
+            <form>
+               <p>
+                  <h2>Расчет массы круглой заготовки</h2>
+               </p>
+
+
+               <div class="cardweight">
+                  <div class="text">
+                     <p>
+                        <pre>Диаметр, мм:</pre>
+                     </p>
+                  </div>
+                  <div class="input">
+                     <input id="val1" type="number" />
+                  </div>
+               </div>
+
+               <div class="cardweight">
+                  <div class="text">
+                     <p>
+                        <pre>Длина, мм:  </pre>
+                     </p>
+                  </div>
+                  <div class="input">
+                     <input id="val2" type="number" />
+                  </div>
+               </div>
+            </form>
+
+            <div class="result">
+               <div class="ves">Вес, кг</div>
+               <div id="rez">0.00</div>
+            </div>
+         </div>
+
+
+         <div class="truba">
+            <form>
+               <p>
+                  <h2>Расчет массы заготовки из трубы</h2>
+               </p>
+               <div class="cardweight">
+                  <div class="text">
+                     <p>
+                        <pre>Диаметр наружн., мм: </pre>
+                     </p>
+                  </div>
+                  <div class="input">
+
+                     <input id="val10" type="number" />
+                  </div>
+               </div>
+
+               <div class="cardweight">
+                  <div class="text">
+                     <p>
+                        <pre>Диаметр внутр., мм:  </pre>
+                     </p>
+                  </div>
+                  <div class="input">
+                     <input id="val11" type="number" />
+                  </div>
+               </div>
+
+               <div class="cardweight">
+                  <div class="text">
+                     <p>
+                        <pre>Длина, мм:           </pre>
+                     </p>
+                  </div>
+                  <div class="input">
+                     <input id="val12" type="number" />
+                  </div>
+               </div>
+
+
+            </form>
+            <div class="result">
+               <div class="ves">Вес, кг</div>
+               <div id="rez1">0.00</div>
+            </div>
+         </div>
+
+
+         <div class="list">
+            <form>
+               <p>
+                  <h2>Расчет массы заготовки из листа</h2>
+               </p>
+               <div class="cardweight">
+                  <div class="text">
+                     <p>
+                        <pre>Толщина, мм: </pre>
+                     </p>
+                  </div>
+                  <div class="input">
+                     <input id="val20" type="number" />
+                  </div>
+               </div>
+               <div class="cardweight">
+                  <div class="text">
+                     <p>
+                        <pre>Ширина, мм:  </pre>
+                     </p>
+                  </div>
+                  <div class="input">
+                     <input id="val21" type="number" />
+                  </div>
+               </div>
+               <div class="cardweight">
+                  <div class="text">
+                     <p>
+                        <pre>Длина, мм:   </pre>
+                     </p>
+                  </div>
+                  <div class="input">
+                     <input id="val22" type="number" />
+                  </div>
+               </div>
+
+            </form>
+            <div class="result">
+               <div class="ves">Вес, кг</div>
+               <div id="rez2">0.00</div>
+            </div>
+         </div>
+
+
+         <div class="hexagon">
+            <form>
+               <p>
+                  <h2>Расчет массы заготовки из шестигранника</h2>
+               </p>
+
+               <div class="cardweight">
+                  <div class="text">
+                     <p>
+                        <pre>Размер шестигранника, мм: </pre>
+                     </p>
+                  </div>
+                  <div class="input">
+                     <input id="val30" type="number" />
+                  </div>
+               </div>
+               <div class="cardweight">
+                  <div class="text">
+                     <p>
+                        <pre>Длина шестигранника, мм:  </pre>
+                     </p>
+                  </div>
+                  <div class="input">
+                     <input id="val31" type="number" />
+                  </div>
+               </div>
+            </form>
+            <div class="result">
+               <div class="ves">Вес, кг</div>
+               <div id="rez3">0.00</div>
+            </div>
+         </div>
+      </div>
+
+   </main>
+   <footer></footer>
+</body>
+
+</html>
